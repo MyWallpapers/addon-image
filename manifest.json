@@ -1,0 +1,53 @@
+{
+  "runtime": "canvas-v1",
+  "name": "Still",
+  "description": "Une image, cadrée avec précision. Source intégrée ou ressource choisie, sans galerie ni diaporama.",
+  "version": "0.1.0",
+  "entry": "dist/assets/addon.js",
+  "thumbnail": "assets/thumbnail.png",
+  "deviceSettingsVersion": "1",
+  "ui": {
+    "pointerEvents": "none"
+  },
+  "settings": [
+    {
+      "id": "image",
+      "type": "resource",
+      "label": "Image"
+    },
+    {
+      "id": "fit",
+      "type": "select",
+      "label": "Cadrage",
+      "default": "cover",
+      "options": [
+        {
+          "value": "cover",
+          "label": "Remplir"
+        },
+        {
+          "value": "contain",
+          "label": "Tout afficher"
+        }
+      ]
+    },
+    {
+      "id": "positionX",
+      "type": "range",
+      "label": "Position horizontale",
+      "default": 50,
+      "min": 0,
+      "max": 100,
+      "step": 1
+    },
+    {
+      "id": "positionY",
+      "type": "range",
+      "label": "Position verticale",
+      "default": 50,
+      "min": 0,
+      "max": 100,
+      "step": 1
+    }
+  ]
+}
